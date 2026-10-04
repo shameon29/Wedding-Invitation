@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 5500,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}

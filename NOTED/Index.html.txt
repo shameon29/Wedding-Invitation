@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan - Dino & Elisa</title>
+
+  <!-- Bootstrap CSS v5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons v1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts: Sacramento & Work Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- SimplyCountdown CSS v3.0+ -->
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO / COVER SECTION -->
+  <section id="hero" class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white position-fixed top-0 start-0 z-3">
+    <main class="container">
+      <h4 class="fw-light mb-2">Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
+      <h1 id="nama-tamu" class="my-3">Nama Tamu Undangan</h1>
+      <p class="mb-4">Akan melangsungkan resepsi pernikahan dalam:</p>
+      <div class="simply-countdown mb-4"></div>
+      <a href="#home" class="btn btn-lg shadow my-button px-4 py-2" onclick="enableScroll()">
+        <i class="bi bi-envelope-open me-2"></i>Lihat Undangan
+      </a>
+    </main>
+  </section>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md fixed-top my-navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand Sacramento fs-2" href="#">Dino & Elisa</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title Sacramento fs-3" id="offcanvasNavbarLabel">Dino & Elisa</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto text-center gap-2">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#story">Story</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gifts">Gifts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME / MEMPELAI SECTION -->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Acara Pernikahan</h2>
+          <h3 class="fs-5 text-muted fw-normal mb-3">Diselenggarakan pada 31 Oktober 2026 di Bandung, Jawa Barat.</h3>
+          <p class="lead fs-6">Oleh karena itu, dengan segala hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+        </div>
+      </div>
+
+      <div class="row couple mt-5 align-items-center">
+        <span class="heart"><i class="bi bi-heart-fill"></i></span>
+        
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="row align-items-center g-3">
+            <div class="col-8 text-end">
+              <h3 class="fs-3 mb-1">Dino Thorne</h3>
+              <p class="text-secondary mb-0">Putra dari Bapak Fulan <br> dan Ibu Fulanah</p>
+            </div>
+            <div class="col-4 text-center">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Dino Thorne" class="img-fluid rounded-circle couple-img shadow-sm">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row align-items-center g-3">
+            <div class="col-4 text-center">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Elisa Vance" class="img-fluid rounded-circle couple-img shadow-sm">
+            </div>
+            <div class="col-8 text-start">
+              <h3 class="fs-3 mb-1">Elisa Vance</h3>
+              <p class="text-secondary mb-0">Putri dari Bapak Fulan <br> dan Ibu Fulanah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-11 text-center">
+          <h2>Informasi Acara</h2>
+          <p class="alamat mb-4">Gedung Trans Luxury Hotel <br> Jl. Gatot Subroto No.289, Cibangkong, Batununggal, Kota Bandung</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.672284992497!2d107.63391787587569!3d-6.929729867831003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e882a87d0e37%3A0x633e8391753c1554!2sThe%20Trans%20Luxury%20Hotel!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4 mb-3 shadow"></iframe>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-outline-light btn-sm mb-4"><i class="bi bi-geo-alt-fill me-1"></i> Buka Google Maps</a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center g-4 mt-1">
+        <div class="col-md-5 col-11">
+          <div class="card text-center text-bg-dark border-secondary h-100 shadow-sm">
+            <div class="card-header border-secondary fw-bold text-uppercase py-3">Akad Nikah</div>
+            <div class="card-body py-4">
+              <div class="row g-3">
+                <div class="col-6">
+                  <i class="bi bi-clock d-block mb-2 text-warning fs-3"></i>
+                  <span>08.00 - 10.00 WIB</span>
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-calendar-heart d-block mb-2 text-warning fs-3"></i>
+                  <span>Sabtu, 31 Okt 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-secondary text-white-50 small">Diharapkan menjaga kekhusyukan acara.</div>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-11">
+          <div class="card text-center text-bg-dark border-secondary h-100 shadow-sm">
+            <div class="card-header border-secondary fw-bold text-uppercase py-3">Resepsi Pernikahan</div>
+            <div class="card-body py-4">
+              <div class="row g-3">
+                <div class="col-6">
+                  <i class="bi bi-clock d-block mb-2 text-warning fs-3"></i>
+                  <span>11.00 WIB - Selesai</span>
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-calendar-heart d-block mb-2 text-warning fs-3"></i>
+                  <span>Sabtu, 31 Okt 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer border-secondary text-white-50 small">Parkir tersedia di area gedung.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section id="story" class="story">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center mb-4">
+          <span class="text-uppercase text-secondary tracking-wide small">Bagaimana Cinta Kami Bersemi</span>
+          <h2>Cerita Kami</h2>
+          <p class="text-secondary">Setiap perjalanan kisah cinta selalu unik dan berharga. Inilah rangkaian momen berharga yang mengantarkan kami menuju ikatan suci.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=80');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Pertama Pertemuan</h3>
+                  <span class="text-muted">1 Juni 2021</span>
+                </div>
+                <div class="timeline-body mt-2">
+                  <p>Kami pertama kali dipertemukan dalam sebuah proyek akademis. Komunikasi yang intensif melahirkan kesepahaman dan rasa saling mengagumi.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=300&q=80');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Mulai Serius</h3>
+                  <span class="text-muted">1 Januari 2023</span>
+                </div>
+                <div class="timeline-body mt-2">
+                  <p>Setelah menjalin persahabatan sekian lama, kami berkomitmen untuk melangkah ke tahap hubungan yang lebih serius dengan dukungan keluarga besar.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image" style="background-image: url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=300&q=80');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Lamaran</h3>
+                  <span class="text-muted">10 Oktober 2025</span>
+                </div>
+                <div class="timeline-body mt-2">
+                  <p>Prosesi pertunangan dan lamaran resmi dilangsungkan dalam suasana hangat bersama keluarga dekat sebagai bentuk komitmen menuju pernikahan.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center mb-4">
+          <span class="text-uppercase text-secondary small">Memori Indah Kami</span>
+          <h2>Galeri Foto</h2>
+          <p class="text-secondary">Beberapa cuplikan foto pre-wedding dan momen kebersamaan kami yang terekam dalam lensa.</p>
+        </div>
+      </div>
+
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2 g-3 justify-content-center">
+        <div class="col">
+          <a href="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80" target="_blank" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=500&q=80" alt="Galeri 1" class="img-fluid rounded-3 shadow-sm w-100">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" target="_blank" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Galeri 2" class="img-fluid rounded-3 shadow-sm w-100">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=80" target="_blank" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=500&q=80" alt="Galeri 3" class="img-fluid rounded-3 shadow-sm w-100">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80" target="_blank" class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=500&q=80" alt="Galeri 4" class="img-fluid rounded-3 shadow-sm w-100">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP SECTION -->
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center mb-4">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p class="text-secondary">Isi formulir di bawah ini untuk mengonfirmasi kehadiran Anda.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <form class="row g-3 shadow-sm p-4 bg-white rounded-4" id="my-form">
+            <div class="col-md-6">
+              <label for="nama" class="form-label font-medium">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="col-md-3">
+              <label for="jumlah" class="form-label font-medium">Jumlah Tamu</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" value="1" required>
+            </div>
+            <div class="col-md-3">
+              <label for="status" class="form-label font-medium">Konfirmasi</label>
+              <select name="status" id="status" class="form-select" required>
+                <option value="" selected disabled>Pilih status</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+            <div class="col-12 text-center mt-4">
+              <button class="btn my-button px-5 py-2 shadow-sm" type="submit" id="btn-submit">Kirim Konfirmasi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- BUKU TAMU INTEGRASI DISQUS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-10">
+          <div id="disqus_thread" class="bg-white p-3 rounded-4 shadow-sm"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIFTS SECTION -->
+  <section id="gifts" class="gifts">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center mb-4">
+          <span class="text-uppercase text-secondary small">Ungkapan Tanda Kasih</span>
+          <h2>Kirim Hadiah</h2>
+          <p class="text-secondary">Doa restu Anda merupakan karunia terindah bagi kami. Namun jika Anda hendak memberikan tanda kasih, Anda dapat menyalurkannya melalui rekening di bawah ini.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6 col-11">
+          <div class="list-group shadow-sm border-0">
+            <div class="list-group-item p-4 border-0 mb-3 rounded-4 bg-light">
+              <div class="fw-bold fs-5 text-dark">BANK BCA</div>
+              <p class="fs-5 mb-2 font-monospace">1234567890</p>
+              <p class="text-muted small mb-3">a.n. DINO THORNE</p>
+              <button class="btn btn-outline-dark btn-sm rounded-pill px-4" onclick="copyToClipboard('1234567890')">
+                <i class="bi bi-copy me-1"></i> Salin Rekening
+              </button>
+            </div>
+            <div class="list-group-item p-4 border-0 rounded-4 bg-light">
+              <div class="fw-bold fs-5 text-dark">BANK MANDIRI</div>
+              <p class="fs-5 mb-2 font-monospace">0987654321</p>
+              <p class="text-muted small mb-3">a.n. ELISA VANCE</p>
+              <button class="btn btn-outline-dark btn-sm rounded-pill px-4" onclick="copyToClipboard('0987654321')">
+                <i class="bi bi-copy me-1"></i> Salin Rekening
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Dino & Elisa Wedding. All Rights Reserved.</p>
+      <p class="small text-white-50 mb-3">Designed & Built with Bootstrap 5 & VS Code.</p>
+      <div class="d-flex justify-content-center gap-3 fs-5">
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AUDIO CONTROLLER -->
+  <div id="audio-container">
+    <audio id="song" loop preload="auto">
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mp3">
+    </audio>
+    <div class="audio-icon-wrapper" style="display: none;" onclick="toggleAudio()">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+
+  <!-- DEPENDENSI JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      var d = document, s = d.createElement("script");
+      s.src = "https://dino-wedding.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
