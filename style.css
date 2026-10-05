@@ -251,22 +251,47 @@ footer {
 }
 
 /* MEDIA QUERIES RESPONSIVE (HP & TABLET) */
-@media (max-width: 991.98px) {
-  .home .heart {
-    display: none;
+/* MENU OVERLAY FULLSCREEN & BLUR DI HP */
+@media (max-width: 767.98px) {
+  /* Buat panel menu memenuhi 100% layar HP */
+  .offcanvas {
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: rgba(10, 10, 10, 0.345) !important; /* Latar gelap transparan */
+    backdrop-filter: blur(15px);                          /* Efek blur pada background */
+    -webkit-backdrop-filter: blur(15px);
+    border: none !important;
   }
-  .timeline::before {
-    left: 40px;
+
+  .offcanvas-header {
+    padding: 1.5rem 2rem 0.5rem 2rem;
   }
-  .timeline > li .timeline-panel {
-    width: calc(100% - 90px);
-    float: right;
+
+  /* Posisikan seluruh isi menu tepat di tengah layar secara vertikal */
+  .offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    overflow: hidden !important; /* Menghilangkan scrollbar */
   }
-  .timeline > li .timeline-image {
-    left: 40px;
+
+  /* Beri jarak yang pas antar menu agar muat dalam 1 layar HP */
+  .offcanvas-body .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem !important; 
+  }
+
+  .offcanvas-body .nav-link {
+    font-size: 1.25rem !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.3rem 0 !important;
+    border-bottom: none !important;
   }
 }
-
 @media (max-width: 575.98px) {
   section {
     padding-top: 5rem;
